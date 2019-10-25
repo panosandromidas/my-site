@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+	<meta charset="utf-8">
+	
+	<meta name=”viewport” content=”width=device-width, initial-scale=1″>
+	<title>Panagiotis Andromidas</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="cv1.css">
+	<!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+  <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+
+
+
+<body background="images1.jpg" id="image"  > 
+	
+
+
+        <script type = "text/javascript">
+            var image = document.getElementById("image");
+            var currentPos = 0;
+            var images = ["images1.jpg", "images2.jpg", "images3.jpg"]
+
+            function volgendefoto() {
+                if (++currentPos >= images.length)
+                    currentPos = 0;
+
+                image.background = images[currentPos];
+                
+                 
+
+            }
+
+            setInterval(volgendefoto, 3000);
+        </script>		
+		
+	  
+
+
+
+
+
+
+
+
+
+
+<div id="mySlides">
+<div id="div1" class="fa"></div>
+<div id="star2">
+<nav role="navigation" class="site-navigation main-navigation primary use-sticky-menu sticky">
+	<nav  class="navbar navbar-expand-md bg-dark navbar-dark"> 
+  <!-- Brand -->
+  <a  class="navbar-brand" href="#" id="hover">WELCOME TO MY SITE</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <!--<a class="nav-link" href="course1.html">CV</a>-->
+        <!--<button type="button"><a href="course1.html">CV</a></button>-->
+        <!--<button type="button" class="btn btn-primary"><a href="course1.html">CV</a></button>-->
+        <a class="btn btn-primary" href="course1.html" role="button">CV</a>
+      </li>
+      <li class="nav-item">
+        <!--<a class="nav-link" href="#">ΕΚΠΑΙΔΕΥΣΗ</a><button type="button" class="btn btn-primary">CLASSES</button>-->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown button
+            </button>
+
+  
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Q&A</a>
+      </li> 
+    </ul>
+
+     <a class="btn btn-primary" href="https://www.facebook.com/panos.andromidas" role="button" id="star1">My Facebook</a>
+    
+   </div> 
+  </nav>
+</nav>  
+</div>
+		
+ <div class="container" >
+    <div class="jumbotron">
+    	 
+	 <h1> MATHEMATICIAN-WEB DEVELOPER</h1>
+	       <div class="content">
+             <img src="C:\Users\panos\OneDrive\Εικόνες\myphoto.png" alt="MY PROFIL PICTURE" width="200">
+              <h2>Panagiotis Andromidas</h2>
+             <h3>Contact:</h3>
+             <ul>
+    	          <li><a href="https://www.facebook.com/panos.andromidas" ><b id="bad">Facebook </b></a></li>
+    	          <li><a href="https://www.linkedin.com/in/panagiotis-andromidas-91b9ba177/"><b id="bad">My linkedin Profile</b></a></li>
+    	          <li><p><b>Cell phone:6974511568</b></p></li>
+                
+             </ul>	
+            </div>
+    </div>
+  </div>	
+
+  <div class="container">
+    <div class="jumbotron">
+	 <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <button type="button" id="demo"  onclick="toggle()" 
+			>Click me to display Date and Time.</button>
+    </div>
+          <div class="col-sm">
+            <div ng-app="">
+              <form>
+            Pick a topic:
+                 <input type="radio" ng-model="myVar" value="dogs">Dogs
+                 <input type="radio" ng-model="myVar" value="tuts">Tutorials
+                 <input type="radio" ng-model="myVar" value="cars">Cars
+             </form>
+
+               <div ng-switch="myVar">
+                 <div ng-switch-when="dogs">
+                   <h1>Dogs</h1>
+                   <p>Welcome to a world of dogs.</p>
+                 </div>
+                 <div ng-switch-when="tuts">
+                   <h1>Tutorials</h1>
+                   <p>Learn from examples.</p>
+                 </div>
+                 <div ng-switch-when="cars">
+                   <h1>Cars</h1>
+                   <p>Read about cars.</p>
+                 </div>
+               </div>
+           </div>
+         </div>
+        <div class="col-sm">
+          <button type="button" id="comme1" onclick="comme()">Comments</button> 
+             
+		    </div>
+		</div>
+  </div>
+</div>
+</div>	
+
+
+
+<div class="container">
+    <div class="jumbotron">
+      <h1>Leave your comments to inform you.</h1>
+      
+
+         <form name='myForm'  onsubmit='return validateForm()' method='post'>
+           First name:<br>
+           <input type="text" name="firstname" placeholder="Enter your first name" >
+           <br>
+           Last name:<br>
+           <input type="text" name="lastname" placeholder='Enter your last name' >
+           <br><br>
+           <input type="submit" value="Submit">
+         </form> 
+
+         <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php" if i use action=''.</p>
+    </div>
+</div> 
+
+
+<div class="container">
+    <div class="jumbotron">
+      <div ng-controller="ExampleController">
+          <form novalidate class="css-form">
+            <label>Name: <input type="text" ng-model="user.name" required /></label><br />
+            <label>E-mail: <input type="email" ng-model="user.email" required /></label><br />
+            Gender: <label><input type="radio" ng-model="user.gender" value="male" />male</label>
+            <label><input type="radio" ng-model="user.gender" value="female" />female</label><br />
+            <input type="button" ng-click="reset()" value="Reset" />
+            <input type="submit" ng-click="update(user)" value="Save" />
+          </form>
+          <pre>user = {{user | json}}</pre>
+          <pre>master = {{master | json}}</pre>
+        </div>
+
+        <style type="text/css">
+          .css-form input.ng-invalid.ng-touched {
+            background-color: #FA787E;
+          }
+
+          .css-form input.ng-valid.ng-touched {
+            background-color: #78FA89;
+          }
+        </style>
+
+          <script>
+            angular.module('formExample', [])
+              .controller('ExampleController', ['$scope', function($scope) {
+               $scope.master = {};
+
+                $scope.update = function(user) {
+                  $scope.master = angular.copy(user);
+                };
+
+                $scope.reset = function() {
+                  $scope.user = angular.copy($scope.master);
+                };
+
+                $scope.reset();
+              }]);
+          </script>
+    </div>
+</div>         
+  
+    	<div
+	  		id="cookies_policy_info" style="overflow: hidden; display: block; width: 25%">
+    		<div class="cookies_info content">Χρησιμοποιω cookies για να κάνω ακόμα καλύτερη την εμπειρία σου στο site μου.&nbsp;<a id="cookies_info_close" class="pg_button inpblue"><button id="but" type="button">Αποδοχή</button></a>
+    
+  		</div>
+
+  
+		
+</div>
+
+
+<script type="text/javascript" src="text.js"></script>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["firstname"].value;
+  var y = document.forms['myForm']['lastname'].value;
+  if (x == "" && y =="") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</body>
+</html>
+        
+
+
