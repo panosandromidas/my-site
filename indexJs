@@ -1,0 +1,146 @@
+window.addEventListener('beforeunload', (event) => {
+  event.returnValue = `Are you sure you want to leave?`;
+});
+
+
+
+document.getElementById('but').onclick = function () {
+
+   document.getElementById('cookies_policy_info').style.display = "none";
+   
+
+}
+
+
+
+
+
+/*document.getElementById('demo').onclick = function(){
+    document.getElementById('demo').innerHTML = Date() ;
+}
+*/
+/*function toggle(){
+
+   var button = document.getElementById('demo');
+
+   if (button.style.display === "none"){
+    document.getElementById('demo').innerHTML = Date() ;
+    button.style.display = 'block';
+   } else {
+    
+    button.style.display = "none";
+   }
+}*/
+function toggle(){
+
+   var button = document.getElementById('demo');
+    if (button.innerHTML === "Click me to display Date and Time.") {
+          button.innerHTML = Date();
+      } else {
+              button.innerHTML = "Click me to display Date and Time.";
+    }
+}
+
+
+
+function comme(){
+  var button = document.getElementById('comme1');
+  
+  
+   
+   if (button.innerHTML === "Comments") {
+        button.innerHTML = "No comments yet!!";
+
+      } else {
+            button.innerHTML = "Comments";
+    
+    
+    } 
+}
+  
+
+
+
+
+
+
+
+       
+
+
+  document.getElementById("hover").addEventListener("mouseover", popup);
+
+  function popup()
+
+  {
+
+  alert("Welcome to my WebPage!!!");
+
+  }
+
+  
+var pinaka =[url(images1.jpg) , url(images2.jpg) , url(cosmos-flower-organge.jpg)]  ;
+/*var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsById("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}*/
+
+var pinaka = [url(images1.jpg),url(images2.jpg), url(cosmos-flower-organge.jpg)];
+var slideIndex = 0;
+carousel(id="mySlides");
+
+function carousel(mySlides) {
+  var i;
+  /*var x = document.getElementsById("mySlides");*/
+  for (i = 0; i < pinaka.length; i++) {
+    pinaka[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > pinaka.length) {slideIndex = 1} 
+  pinaka[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 2000); 
+}
+
+
+
+
+    /*var pinaka = ["images1.jpg","images2.jpg", "cosmos-flower-organge.jpg"];
+    var index = 0;
+    setInterval (function(){
+    
+      if (index === pinaka.length) {
+          index = 0;
+      }
+      document.body.style.backgroundImage.src = pinaka[index] ;/*="url('pinaka[index]')";
+      index++;
+} , 2000);*/
+
+
+      
+
+/*window.onload = function () {
+
+  function Timer() {
+    window.setInterval("changeImage()", 2000);
+  }
+
+  function changeImage() {   
+    var BackgroundImg["images1.jpg",
+                      "images2.jpg",
+                      "cosmos-flower-organge.jpg",
+                      ];
+    /*var i = Math.floor((Math.random() * 3));
+    var bgImg = document.body.style.backgroundImage();
+    bgImg.url = BackgroundImg[i];
+  }
+}*/
